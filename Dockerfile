@@ -1,5 +1,12 @@
 FROM kauden/pure-ftpd-mysql
 
+ENV MYSQL_SERVER
+ENV MYSQL_USER
+ENV MYSQL_PASSWORD
+ENV MYSQL_DATABASE
+ENV MYSQL_PORT
+ENV CERTIFICATE
+
 RUN apt-mark hold pure-ftpd pure-ftpd-common
 
 ADD mysql.conf /etc/pure-ftpd/db/mysql.conf
