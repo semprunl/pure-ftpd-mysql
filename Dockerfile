@@ -15,5 +15,4 @@ RUN chmod +x /*.sh
 ENV AUTHORIZED_KEYS **None**
 
 EXPOSE 22
-ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/run.sh"]
